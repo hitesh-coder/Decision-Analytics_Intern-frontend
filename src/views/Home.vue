@@ -30,7 +30,7 @@
                             <span class="fw-bold">From:</span> {{ meet.start }}
                         </p>
                         <p class="fw-lighter" v-if="meet.end">
-                            <span class="fw-bold">End:</span> {{ meet.date }}
+                            <span class="fw-bold">End:</span> {{ meet.end }}
                         </p>
                         <div
                             class="
