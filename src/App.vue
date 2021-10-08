@@ -1,5 +1,6 @@
 <template>
     <div>
+        <pre-loader />
         <div id="nav">
             <div
                 class="position-absolute btn btn-danger messages"
@@ -76,9 +77,10 @@
 
 <script>
 import credits from './components/credits.vue';
+import PreLoader from './components/preLoader.vue';
 
 export default {
-    components: { credits },
+    components: { credits, PreLoader },
     name: "App",
     computed: {
         messages() {

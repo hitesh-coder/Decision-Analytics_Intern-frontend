@@ -1,5 +1,9 @@
 <template>
     <div class="home container">
+        <div class="text-center d-flex flex-column justify-content-center align-items-center" v-if="meetSchedule == ''">
+            <span class="fw-bold fs-3">No Meet Schedule</span>
+            <img src="/Empty.svg" class="img-fluid" alt="">
+        </div>
         <div class="row g-4">
             <div
                 class="col-lg-3 col-md-4 col-sm-6"
