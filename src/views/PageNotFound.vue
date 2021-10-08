@@ -1,0 +1,166 @@
+<template>
+    <div>
+        <div class="error">404 NOT FOUND</div>
+        <div class="content">
+            <div class="scarecrow">
+                <img src="https://raw.githubusercontent.com/hitesh-coder/404-not-found/main/Scarecrow.png" alt="" />
+            </div>
+            <div class="errormsg">
+                <h1>I have bad news for you</h1>
+                <p>
+                    The page you are looking for might be removed or is
+                    temporarily unavailable
+                </p>
+                <router-link :to="{ name: 'Home' }">
+                    <button>BACK TO HOMEPAGE</button>
+                </router-link>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "pageNotFound",
+};
+</script>
+
+<style lang="scss" scoped>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+
+    color: #333333;
+
+    margin-top: 40px;
+    margin-left: 77px;
+}
+
+.content {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    padding: 0 7vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .errormsg {
+        h1 {
+            font-family: Space Mono;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 95px;
+            letter-spacing: -0.035em;
+
+            color: #333333;
+        }
+
+        p {
+            margin-top: 36px;
+            margin-bottom: 88px;
+            margin-right: 170px;
+
+            font-family: Space Mono;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.035em;
+
+            color: #4f4f4f;
+        }
+
+        button {
+            padding: 20px 50px;
+            outline: none;
+            border: none;
+
+            background: #333333;
+            color: #ffffff;
+            font-family: Space Mono;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 54px;
+
+            letter-spacing: -0.035em;
+        }
+    }
+}
+
+.scarecrow {
+    margin-right: 10vw;
+
+    img {
+        width: 540px;
+        height: 450px;
+    }
+}
+
+footer {
+    height: 5vh;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+
+    color: #bdbdbd;
+
+    a {
+        font-weight: 700;
+        color: #a1a1a1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .error {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 70px;
+        margin-bottom: 100px;
+
+        .errormsg {
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                margin-top: 30px;
+                margin-bottom: 66px;
+                margin-right: 0%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .scarecrow {
+        margin-right: 0;
+
+        img {
+            height: 250px;
+            width: 300px;
+        }
+    }
+}
+</style>
