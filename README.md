@@ -2,7 +2,7 @@
 
 <h1 align="center">My Unsplash Frontend</h1>
 
-> Back-end app at [HERE](https://github.com/hitesh-coder/my-unsplash-backend)
+> Back-end app at [HERE](https://github.com/hitesh-coder/Decision-Analytics_Intern-backend)
 
 <div align="center">
    Solution for a challenge from  Decision Science & Analytics.
